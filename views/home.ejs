@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp - Discover Amazing Campgrounds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/stylesheets/homePage.css">
+</head>
+
+<body class="d-flex flex-column text-white">
+    <!-- Navigation Bar -->
+    <%-include('./partials/navbar') %>
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <!-- Hero Section -->
+            <main class="hero-section">
+                <div class="hero-icon">
+                    <i class="bi bi-tent-fill"></i>
+                </div>
+                <h1 class="hero-title">YelpCamp</h1>
+                <p class="hero-subtitle">
+                    Welcome to YelpCamp! <br>
+                    Your ultimate destination for discovering amazing campgrounds. <br>
+                    <span class="fw-bold">Explore, Share & Connect with Nature Lovers</span>
+                </p>
+
+                <!-- Feature Cards -->
+                <div class="row g-3 mb-5" style="max-width: 900px; margin: 0 auto;">
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="bi bi-map"></i>
+                            </div>
+                            <h4>Discover</h4>
+                            <p>Find hidden camping gems from our community</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="bi bi-pencil-square"></i>
+                            </div>
+                            <h4>Share</h4>
+                            <p>Add your favorite campgrounds to our collection</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="bi bi-chat-dots"></i>
+                            </div>
+                            <h4>Connect</h4>
+                            <p>Leave reviews and connect with other campers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="/campgrounds" class="btn cta-button btn-explore">
+                    <i class="bi bi-arrow-right-circle"></i> Explore Campgrounds Now
+                </a>
+            </main>
+
+            <!-- Footer -->
+            <footer class="mt-auto text-center footer-custom pb-3">
+                <p class="mb-0"><i class="bi bi-c-circle"></i> 2026 YelpCamp. All rights reserved.</p>
+            </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
